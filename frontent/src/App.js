@@ -10,6 +10,11 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [loggedInUser, setLoggedInUser] = useState(null);
 
+  const handlePasswordPaste = (e) => {
+    e.preventDefault();
+    alert("Pasting password is not allowed. Please type your password.");
+  };
+
   const handleLogin = async () => {
     setError('');
     setLoading(true);
